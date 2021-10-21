@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { AppProps } from 'next/app';
 import { CssBaseline, ThemeProvider } from '@material-ui/core';
 import { CacheProvider, EmotionCache } from '@emotion/react';
+import "reflect-metadata";
 
 import { theme } from '../styles/theme';
 import createEmotionCache from '../src/createEmotionCache';

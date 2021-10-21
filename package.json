@@ -21,10 +21,13 @@
     "axios": "^0.23.0",
     "mapbox-gl": "^2.5.0",
     "next": "11.1.2",
+    "pg": "^8.7.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-mapbox-gl": "^5.1.1",
-    "react-responsive-carousel": "^3.2.21"
+    "react-responsive-carousel": "^3.2.21",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.38"
   },
   "devDependencies": {
     "@types/react": "17.0.24",
