@@ -10,6 +10,7 @@ import Map from '../src/components/Map';
 import Services from '../src/components/Services';
 import { makeStyles } from '@material-ui/styles';
 import Contact from '../src/components/Contact';
+import Footer from '../src/components/Footer';
 
 const useStyle = makeStyles(() => ({
 	servicesBox: {
@@ -55,6 +56,7 @@ const Home: React.FC = () => {
 			<Services />
 			<Contact />
 			<Map />
+			<Footer />
 		</>
 	);
 };

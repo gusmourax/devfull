@@ -1,0 +1,7 @@
+.container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    background-color: #132345f0;
+    color: #fff;
+}

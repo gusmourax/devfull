@@ -2,17 +2,21 @@ import Image from 'next/image';
 import {
 	AppBar,
 	Box,
+	Button,
 	Drawer,
 	IconButton,
 	Toolbar,
 	Typography,
 } from '@mui/material';
-import { Menu } from '@mui/icons-material';
-import { useState } from 'react';
 
 import logo from '../../assets/logo.jpeg';
+import { useState } from 'react';
+import MembersDialog from '../MembersDialog';
 
 const Header: React.FC = () => {
+
+	const [dialogOpen, setDialogOpen] = useState(false);
+
 	return (
 		<>
 			<Box sx={{ flexGrow: 1 }}>
@@ -36,9 +40,17 @@ const Header: React.FC = () => {
 								}}
 							/>
 						</Typography>
+						<Button
+							variant="contained"
+							color="success"
+							onClick={() => setDialogOpen(true)}
+						>
+							Mostrar integrantes do grupo
+						</Button>
 					</Toolbar>
 				</AppBar>
 			</Box>
+			<MembersDialog open={dialogOpen} setOpen={setDialogOpen} />
 		</>
 	);
 };
